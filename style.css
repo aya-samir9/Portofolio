@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+    font-family: "Ubuntu", serif;
+    padding: 0;
+    margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+    background-image: linear-gradient(to right,#01022d,#000);
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-image: linear-gradient(to right, #01022de5 30%,#00000088), url("images/mo_salah9.jpg");
+    background-size: contain;
+    background-position: center;
+    width: 90%;
+    height: 640px;
+}
+.container:hover{
+    background-image: linear-gradient(to right, #01022de5 30%,transparent), url("images/mo_salah9.jpg");
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul a{
+    border-bottom: 2px solid transparent;
+}
+ul a:hover{
+    border-bottom-color: white;
+}
+.content{
+    color: white;
+    width: 50%;
+    margin-top: 120px;
+    padding: 30px;
+    transition: all 0.3s ease;
+}
+.content.active{
+    background-color: rgba(0, 0, 0, 0.7);
+    color:yellow;
+}
+.content h2{
+    font-size: 100px;
+    text-transform: uppercase;
+}
+.content p{
+    letter-spacing: 3px;
+    width: 350px;
+    padding: 20px 0;
+}
+.content button{
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+}
+.content button:hover{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+#photos {
+    background-color: #01022d;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+#photos h2{
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.photo-gallery img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.photo-gallery img:hover {
+    transform: scale(1.05);
+}
+#about {
+    background-color: #01022d;
+    color: rgb(225, 213, 213);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about h2 {
+    color: white;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+#about h3 {
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+#about ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.profile-img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #ffd700;
+}
